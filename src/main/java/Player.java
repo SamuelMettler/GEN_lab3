@@ -79,18 +79,34 @@ public class Player {
         this.board = board;
     }
 
+    /**
+     * Function to increment current Cash with givn param
+     * @param amount amount to add
+     */
     public void addCash(int amount){
         this.cash += amount;
     }
 
+    /**
+     * Function to decrement the current cash with given param
+     * @param amountToPay amount to substract to current cash
+     */
     public void reduceCash(int amountToPay) {
         this.cash -= amountToPay;
     }
 
+    /**
+     * Getter for the board
+     * @return the board of the player
+     */
     public Board getBoard(){
         return this.board;
     }
 
+    /**
+     * Get the current cash of this player
+     * @return amount in the bank
+     */
     public int getNetWorth() {
         return this.cash;
     }
